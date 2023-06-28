@@ -2,7 +2,7 @@
 
 Just excited about knowing how react works under the hood and about the reconciliation algorithm and just wanted to try it to develop a mini version of it.
 
-reconciliation algorithm : This is the power house of react where it takes the state of the component and renders it accordingly which saves a bunch of time for developer without writing all those hectic JS code to manipulate the dom
+reconciliation algorithm : This is the power house of react where it takes the state of the component and renders it accordingly which saves a bunch of time for developer without writing all those hectic JS code to manipulate the dom like this
 
 ```
    const childNode = document.createElement('div');
@@ -14,6 +14,8 @@ reconciliation algorithm : This is the power house of react where it takes the s
             childNode.appendChild(h2Att)
             mainContainer.appendChild(childNode)
 ```
+
+On short it takes data/state and changes/outputs the DOM which makes developers focus only on the state.
 
 This is where virtualDOM concept comes into picture, It is a javascript object where it stores the current version of DOM tree and everytime the state changes first VDOM would update only the changed state/keys in the object and then try to update the DOM accordingly
 with lots of optimzations thanks to REACT and its community.
